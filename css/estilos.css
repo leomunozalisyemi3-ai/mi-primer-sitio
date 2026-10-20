@@ -1,0 +1,154 @@
+/* ESTILOS GENERALES */
+
+html {
+    background-color: lightgray;
+    padding: 10px;
+}
+
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    margin: 0;
+    padding: 20px;
+}
+
+p {
+    color: rgb(5, 5, 12);
+    line-height: 1.6;
+    font-size: 17px;
+}
+
+
+/* TÍTULO PRINCIPAL */
+
+h1 {
+    background-color: green;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* SUBTÍTULOS */
+
+h2 {
+    color: green;
+    background-color: lightgray;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+
+/* LISTAS */
+
+ul,
+ol {
+    font-size: 17px;
+}
+
+
+/* TARJETAS */
+
+.tarjeta {
+    background-color: lightgreen ;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.tarjeta{box-shadow: 2px 2px 5px gray   ;}
+.tarjeta:hover{background-color: lightblue;}
+
+
+/* MENU - FLEXBOX */
+
+nav {
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    gap: 10px;
+    flex-direction: column;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+
+nav a:hover{color: yellow;}
+
+nav a:hover{color: lightcoral;
+background-color: green;
+color: white;}
+
+
+/* TABLA */
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 2px solid black;
+    padding: 8px;
+}
+
+th {
+    background-color: green;
+    color: white;
+}
+
+
+/* IMAGEN ADAPTABLE */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+
+/* ENLACES */
+
+a {
+    color: green;
+    font-size: 18px;
+}
+
+
+/* GRID - MOBILE FIRST */
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+
+/* PANTALLAS DE 768PX O MÁS */
+
+@media (min-width: 768px) {
+
+    .contenedor {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+}
